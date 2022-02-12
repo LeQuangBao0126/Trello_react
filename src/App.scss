@@ -1,0 +1,8 @@
+@import './_setting.scss';
+.trello-trungquandev-master{
+      height:100vh ;
+      display: grid ;
+      grid-template-rows: 40px 50px 1fr;  // tren giua duoi 
+      line-height: 1.3em;
+      background-color: $board-bg-color ;
+}

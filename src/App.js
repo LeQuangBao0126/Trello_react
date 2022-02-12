@@ -1,9 +1,13 @@
-import './App.css';
-
+import "./App.scss";
+import AppBar from 'components/AppBar/AppBar'
+import BoardBar from "components/BoardBar/Boardbar";
+import BoardContent from "components/BoardContent/BoardContent";
 function App() {
   return (
-    <div className="App">
-       Hello
+    <div className="trello-trungquandev-master">
+      <AppBar></AppBar>
+      <BoardBar></BoardBar>
+      <BoardContent></BoardContent>
     </div>
   );
 }

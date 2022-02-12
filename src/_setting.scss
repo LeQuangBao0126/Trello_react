@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600;700&display=swap');
+
+$gap:10px;
+$column-header-height: 36px ;
+$column-footer-height: 36px ;
+$column-border-radius : 5px ;
+$card-border-radius : 4px ;
+
+$board-bg-color : #078cda;
+$list-bg-color : #ebecf0;
+
+body {
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+    font-size:14px;
+    line-height: 1.3rem;
+  }
