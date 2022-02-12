@@ -1,0 +1,65 @@
+@import '_setting.scss';
+
+
+.board-content{
+    display:flex ;
+    overflow-x: auto;
+    .column{
+      margin-left:$gap;
+       flex : 0 0 auto;
+       width: 300px;
+       height: calc(80% - #{$gap});
+       > * {
+         background-color: $list-bg-color; 
+         color: #333;
+         padding : 0 8px;
+       }
+       img{
+         display:block;
+         width:calc(100% + #{$gap * 2});
+         background-size:cover;
+         margin: -$gap 0 $gap (-$gap);
+       } 
+       header{
+         padding-left:15px;
+         height: $column-header-height;
+         line-height: $column-header-height;
+         font-size: 16px;
+         font-weight: bold;
+         border-top-left-radius: $column-border-radius;
+         border-top-right-radius: $column-border-radius;
+       }
+
+       footer{
+         padding-left:15px;
+         height: $column-footer-height;
+         line-height: $column-footer-height;
+         font-size: 16px;
+         font-weight: bold;
+         border-bottom-right-radius: $column-border-radius;
+         border-bottom-left-radius: $column-border-radius;
+       }
+       ul{
+         margin: 0;
+         list-style-type: none;
+         max-height:  calc(100% - #{$column-header-height + $column-footer-height} );
+         overflow-y: auto;
+         &::-webkit-scrollbar:vertical {
+              width:11px;
+         }
+         &::-webkit-scrollbar-thumb {
+              background-color: darken($list-bg-color,15);
+         }
+
+         li{
+             background-color: white;
+             padding: $gap;
+             border-radius: $card-border-radius;
+             box-shadow: 0 1px 1px rgba(0, 0, 0,0.1);
+             &:not(:last-child){
+               margin-bottom: $gap;
+             }
+         }
+       }
+    }
+ }
